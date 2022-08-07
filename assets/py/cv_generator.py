@@ -59,7 +59,7 @@ cv_data['basic_links'] = {
         "name":"@your_user"
     },
     "email":{
-        "link":"mailto:daniel@yoursite.com",
+        "link":"mailto:yourname@yoursite.com",
         "name":"contact@yoursite.com"
     },
     "linkedin":{
