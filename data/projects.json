@@ -1,0 +1,116 @@
+{   
+    "projectHeadings":{
+        "personal":{
+            "en":"Personal",
+            "es":"Personales"
+        },
+        "job-related":{
+            "en":"Work-related",
+            "es":"Laborales"
+        },
+        "academic":{
+            "en":"Academic",
+            "es":"Académicos"
+        },
+        "unfinished":{
+            "en":"Unfinished",
+            "es":"Sin completar"
+        }
+    },
+    "projectLinkHeading":{
+        "github":{
+            "en":"Link to repository",
+            "es":"Enlace al repositorio"
+        },
+        "website":{
+            "en":"Live website",
+            "es":"Página web en vivo"
+        }
+    },
+    "projectSections":{
+        "personal":{
+            "include":"true",
+            "emoji":"🤹"
+        },
+        "job-related":{
+            "include":"false",
+            "emoji":"🔨"
+        },
+        "academic":{
+            "include":"true",
+            "emoji":"📚"
+        },
+        "unfinished":{
+            "include":"true",
+            "emoji":"🚧"
+        }
+    },
+    "projectNames":{
+        "personal":[
+            {
+                "en":"Personal proj. 1",
+                "es":"Proyecto académico 1"
+            }
+        ],
+        "job-related":[
+            {
+                "en":"Work proj. 1",
+                "es":"Proyecto laboral 1"
+            }
+        ],
+        "academic":[
+            {
+                "en":"Academic proj. 1",
+                "es":"Proyecto académico 1"
+            }
+        ],
+        "unfinished":[
+            {
+                "en":"Unfinished project 1",
+                "es":"Proyecto sin terminar 1"
+            }
+        ]
+    },
+    "projectDescriptions":{
+        "personal":[
+            {
+                "en":"Personal proj. desc. 1",
+                "es":"Desc. proyecto académico 1"
+            }
+        ],
+        "job-related":[
+            {
+                "en":"Work proj. desc. 1",
+                "es":"Desc. Proyecto laboral 1"
+            }
+        ],
+        "academic":[
+            {
+                "en":"Academic proj. desc. 1",
+                "es":"Desc. Proyecto académico 1"
+            }
+        ],
+        "unfinished":[
+            {
+                "en":"Unfinished project desc. 1",
+                "es":"Desc. Proyecto sin terminar 1"
+            }
+        ]
+    },
+    "projectLinks":{
+        "personal":[
+            "https://yoursite.com"
+        ],
+        "job-related":[
+            "https://yoursite2.com"
+        ],
+        "academic":[
+            "https://github.com/your_github_user/your_github_repo"
+        ],
+        "unfinished":[
+            "https://github.com/your_github_user/your_github_repo_2"
+        ]
+    }
+}
+
+

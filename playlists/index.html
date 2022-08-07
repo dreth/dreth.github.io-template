@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Your name | playlists">
+  <meta name="description" content="">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yoursite.com/playlists">
+  <meta property="og:title" content="Your name | playlists">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="/assets/icons/meta.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="/assets/icons/meta.png">
+  <meta property="twitter:url" content="https://yoursite.com/playlists">
+  <meta property="twitter:title" content="Your name | playlists">
+  <meta property="twitter:description" content="">
+  <meta property="twitter:image" content="/assets/icons/meta.png">
+
+  <!-- stylesheet, script, icon and font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" type="text/css" href="/assets/css/styles-settings.css">
+  <link rel="shortcut icon" id="icon"/>
+  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="/assets/css/styles.css">
+  <script src="/assets/js/libs/jquery.js"></script>
+
+  <!-- title -->
+  <title id="playlistsTitleBar">playlists | Your name</title>
+</head>
+
+<body class="paddedBody">
+
+  <div>
+    <div class="row">
+      <div class="column leftcol">
+        <a class='title' href="/" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1 class="inline">Your name</h1></a>
+        <h3 id="playlistsTitle"></h3>
+      </div>
+      <div class="column rightcol">
+        <!-- Theme switcher -->
+        <br><div id="themeSwitcher"></div>
+      </div>
+    </div>
+
+    <!-- PLAYLIST LINKS -->
+    <div class="row divBorder" id="playlistsLinks"></div>
+    
+  </div>
+
+  <script src="/assets/js/mainScript.js"></script>
+  <script src="/assets/js/playlistsScript.js"></script>
+</body>
+
+</html>

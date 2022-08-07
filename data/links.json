@@ -1,0 +1,11 @@
+{
+    "wikipedia": {
+        "Example": "EN_Example"
+    },
+    "wiktionary": {
+        "example": "EN_example"
+    },
+    "other_sites": {
+        "Example dot com": "https://example.com"
+    }
+}

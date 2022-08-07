@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Your name">
+  <meta name="description" content="">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yoursite.com/">
+  <meta property="og:title" content="Your name">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="/assets/icons/meta.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="/assets/icons/meta.png">
+  <meta property="twitter:url" content="https://yoursite.com/">
+  <meta property="twitter:title" content="Your name">
+  <meta property="twitter:description" content="">
+  <meta property="twitter:image" content="/assets/icons/meta.png">
+
+  <!-- stylesheet, script, icon and font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" type="text/css" href="/assets/css/styles-settings.css">
+  <link rel="shortcut icon" id="icon"/>
+  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="/assets/css/styles.css">
+  <script src="/assets/js/libs/jquery.js"></script>
+
+  <!-- title -->
+  <title>Your name</title>
+</head>
+
+<body class="paddedBody">
+    <!-- TITLE STUFF -->
+    <div class="row">
+      <div class="column leftcol">
+        <a class='title titleHomepage'><h1 class="colorCycleText inline">Your name</h1></a>
+        <p class="heading" id="welcomeSubtitle"></p>
+        <br>
+      </div>
+      <div class="column rightcol">
+        <br>
+        <!-- Language switcher -->
+        <div class="inline">
+          <a onclick="updateLang('es')" onmouseenter="toggleLangText('es',1)" onmouseleave="toggleLangText('es',0)" class="l">🇪🇸🇩🇴</a>&nbsp;
+          <a onclick="updateLang('en')" onmouseenter="toggleLangText('en',1)" onmouseleave="toggleLangText('en',0)" class="l">🇬🇧🇺🇸</a>
+          <!-- <a onclick="updateLang('nl')" onmouseenter="toggleLangText('nl',1)" onmouseleave="toggleLangText('nl',0)" class="l">🇳🇱🇧🇪</a><br> -->
+        </div>&emsp;&nbsp;
+        <!-- Theme switcher -->
+        <div id="themeSwitcher" class="inline"></div>
+      </div>
+    </div>
+
+    <!-- HOMEPAGE MAIN DIV -->
+    <div class="row" id="homepageMainDiv">
+      <!-- HOMEPAGE BUTTONS AND SUMMARIES -->
+      <div class="column leftcol-home-np">
+        <!-- SELF DESCRIPTION ON HOMEPAGE -->
+        <div class="paddingAllAround divBorder" id="aboutHomepageDIV">
+          <div class="centered">
+            <a href="/about" onclick="this.href = about;" oncontextmenu="this.href = about;" class="b h3" id="aboutHomepageLink"></a>
+          </div>
+          <div class="row" id="aboutHomepagePreview"></div>
+        </div>
+        <br>
+      <!-- SOCIAL LINKS + EMAIL + PROJECTS -->
+        <div class="row">
+          <a href="https://github.com/your_github_user" onclick="this.href = github;" oncontextmenu="this.href = github;" class="b ml-prof">
+            <div class="column leftcol-half-mb centered hp-main-grid-11 divBorder ml">
+                <h3 id="githubHomepageLink"></h3>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/your_linkedin_user/" onclick="this.href = linkedin;" oncontextmenu="this.href = linkedin;" class="b ml-prof">
+            <div class="column rightcol-half-mb centered hp-main-grid-12 divBorder ml">
+                <h3 id="linkedinHomepageLink"></h3>
+            </div>
+          </a>
+        </div>
+        <div class="row">
+          <a href="mailto:contact@yoursite.com" onclick="this.href = email;" oncontextmenu="this.href = email;" class="b ml-prof">
+            <div class="column leftcol-half-mb centered hp-main-grid-21 divBorder ml">
+                <h3 id="emailHomepageLink"></h3>
+            </div>
+          </a>
+          <a href="/projects" onclick="this.href = projects;" oncontextmenu="this.href = projects;" class="b ml-prof">
+            <div class="column rightcol-half-mb centered hp-main-grid-22 divBorder ml">
+                <h3 id="projectsHomepageLink"></h3>
+            </div>
+          </a>
+        </div>
+        <br>
+        <!-- EXPANDED SECTIONS (COOL LINKS, PLAYLISTS) -->
+        <div class="paddingAllAround divBorder" id="coolLinksHomepageDIV">
+          <div class="centered">
+            <a href="/cool_links" onclick="this.href = cool_links;" oncontextmenu="this.href = cool_links;" class="b h3" id="coolLinksHomepageLink"></a>
+          </div>
+          <div class="row" id="coolLinksHomepagePreview"></div>
+        </div>
+        <br>
+        <div class="paddingAllAround divBorder" id="playlistsHomepageDIV">
+          <div class="centered">
+            <a href="/playlists" onclick="this.href = playlists;" oncontextmenu="this.href = playlists;" class="b h3" id="playlistsHomepageLink"></a>
+          </div>
+          <div class="row centered" id="playlistsHomepagePreview"></div>
+        </div>
+        <br>
+      </div>
+      <!-- BLOG ARTICLE LIST -->
+      <div class="column rightcol-home">
+        <!-- article list -->
+        <div class="paddingAllAround divBorder" id="blogArticles">
+            <div class="blogTitle">
+              <h3 id="blogTitle"></h3>
+              <br><br>
+            </div>
+          <div id="articleList"></div>
+        </div>
+        <br>
+        <!-- subscribe form -->
+        <div class="paddingAllAround divBorder" id="mcStuff">
+          <div class="blogTitle">
+            <h3 id="signUpNewsletterTitle" class="inline"></h3>
+            <br>
+          </div>
+          <div id="mailchimpStuff"></div>
+        </div>
+      </div>
+  </div>
+      
+  <!-- main script with pretty much everything useful and important -->
+  <script src="/assets/js/mainScript.js"></script>
+</body>
+
+</html>

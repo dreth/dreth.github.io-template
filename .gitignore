@@ -1,0 +1,12 @@
+assets/py/links_to_process.txt
+LICENSE
+assets/py/word_lists/EN.txt
+assets/py/word_lists/ES.txt
+assets/py/word_lists/NL.txt
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.xdv
+*.out

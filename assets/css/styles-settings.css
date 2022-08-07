@@ -1,0 +1,799 @@
+a.ml-prof {
+  display: block;
+  font-family: Ubuntu, Sans-Serif;
+  word-wrap: break-word;
+}
+a.ml, a.b, a.p, a.b, a.bp, a.gb {
+  font-family: Ubuntu, Sans-Serif;
+  word-wrap: break-word;
+}
+a.titleHomepage {
+  cursor: default;
+}
+.hp-main-grid-11 {
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+.hp-main-grid-12 {
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+.hp-main-grid-21 {
+  margin-right: 2%;
+  margin-top: 2%;
+}
+.hp-main-grid-22 {
+  margin-left: 2%;
+  margin-top: 2%;
+}
+/* two-col layout - PLAYLISTS */
+div.leftcol-half {
+  width: 50%;
+  float: none;
+}
+div.rightcol-half {
+  width: 50%;
+  float: none;
+}
+/* left-right margins 2% */
+div.leftmargin-2 {
+  margin-left: 2%;
+}
+div.rightmargin-2 {
+  margin-right: 2%;
+}
+/* left-right margins 1% */
+div.leftmargin-1 {
+  margin-left: 1%;
+}
+div.rightmargin-1 {
+  margin-right: 1%;
+}
+/* two-col layout - MAIN HOMEPAGE BUTTONS */
+div.leftcol-half-mb {
+  width: 48%;
+  float: none;
+}
+div.rightcol-half-mb {
+  width: 48%;
+  float: none;
+}
+/* two-col layout - prev and forward article buttons */
+div.leftcol-half-articles {
+  width: 42%;
+  float: none;
+}
+div.rightcol-half-articles {
+  width: 42%;
+  float: none;
+}
+
+/* screen width higher than 2000 px */
+@media screen and (min-width: 2550px) {
+    /* article padding and object padding */
+    .articleBody, .paddedBody {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .fullBody {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+    .halfRightPadding {
+      padding-right: 50%;
+    }
+    .blogTitleRightPadding {
+      padding-right: 90%;
+    }
+    .titleDivPadding {
+      padding-right: 2%;
+    }
+    .homepagePlaylist {
+      width: 100%;
+    }
+    /* PADDING all around */
+    .paddingAllAround {
+      padding-left: 3%;
+      padding-right: 3%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+    }
+    .smallPaddingAllAround {
+      padding-left: 2%;
+      padding-right: 2%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+    /* article date */
+    span.articleTopInfo {
+      font-size: 0.5vw;
+    }
+    /* MULTI COLUMN LAYOUTS ---------------------- */
+    /* two-col layout */
+    div.column {
+      float: left;
+    }
+    div.leftcol {
+      width: 80%;
+    }
+    div.rightcol {
+      width: 20%;
+    }
+    div.triplecol {
+      width: 33%;
+    }
+    div.row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    /* two-col layout - HOME */
+    div.leftcol-home {
+      width: 25%;
+    }
+    div.leftcol-home-np {
+      width: 25%;
+    }
+    div.rightcol-home {
+      width: 73%;
+      margin-left: 1.5%;
+    }
+    /* two-col layout - ABOUT */
+    div.leftcol-half-about {
+      width: 48%;
+    }
+    div.rightcol-half-about {
+      width: 48%;
+    }
+    /* --------------------------------------------- */
+    /* PLAYLIST HOVER STUFF */
+    .img__wrap {
+      position: relative;
+    }
+    .img__description_layer {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      visibility: hidden;
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity .1s, visibility .1s;
+    }
+    .img__description {
+      transition: .1s;
+      transform: translateY(1em);
+    }
+    .img__wrap:hover .img__description_layer {
+      visibility: visible;
+      opacity: 1;
+    }
+    /* --------------------------------------------- */
+    img.playlistImages {
+      width: 18vw;
+    }
+    img.playlistImages-hp {
+      width: 14vw;
+    }
+    a,
+    ul,
+    p,
+    ol,
+    span {
+      font-size: 1vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    table {
+      font-size: 0.9vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    pre {
+      font-size: 0.8vw;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+    }
+    .notThatSmall {
+      font-size: 0.8vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    .smaller {
+      font-size: 0.6vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    a.dts, a.lts {
+      font-size: 1.2vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    figcaption,  a.figcaption {
+      font-size: 0.8vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    sup {
+      font-size: 0.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    a.imageSource {
+      text-align: center;
+      font-size: 0.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    h1 {
+      font-size: 2vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    .title {
+      font-size: 2.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h2 {
+      font-size: 1.7vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h3 {
+      font-size: 1.2vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    .h3 {
+      font-size: 1.2vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h4 {
+      font-size: 1vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    .h4 {
+      font-size: 1vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    .dash {
+      font-size: 1vw;
+    }
+  }
+  
+  /* screen width higher than 1000 px */
+  @media screen and (max-width: 2550px) and (min-width: 1250px) {
+    /* article padding and object padding */
+    .articleBody, .paddedBody {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    .fullBody {
+      padding-left: 0%;
+      padding-right: 0%;
+    }
+    .halfRightPadding {
+      padding-right: 35%;
+    }
+    .blogTitleRightPadding {
+      padding-right: 83%;
+    }
+    .titleDivPadding {
+      padding-right: 5%;
+    }
+    .homepagePlaylist {
+      width: 100%;
+    }
+    /* PADDING all around */
+    .paddingAllAround {
+      padding-left: 3%;
+      padding-right: 3%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+    }
+    .smallPaddingAllAround {
+      padding-left: 2%;
+      padding-right: 2%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+    /* article date */
+    span.articleTopInfo {
+      font-size: 0.8vw;
+    }
+    /* MULTI COLUMN LAYOUTS ---------------------- */
+    /* two-col layout */
+    div.column {
+      float: left;
+    }
+    div.leftcol {
+      width: 70%;
+    }
+    div.rightcol {
+      width: 30%;
+    }
+    div.triplecol {
+      width: 33%;
+    }
+    div.row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    /* two-col layout - HOME */
+    div.leftcol-home {
+      width: 35%;
+      padding-left: 2%;
+      padding-right: 2%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      margin-right: 2%;
+    }
+    div.leftcol-home-np {
+      width: 35%;
+    }
+    div.rightcol-home {
+      width: 63%;
+      margin-left: 1.5%;
+    }
+    /* two-col layout - ABOUT */
+    div.leftcol-half-about {
+      width: 48%;
+    }
+    div.rightcol-half-about {
+      width: 48%;
+    }
+    /* --------------------------------------------- */
+    /* PLAYLIST HOVER STUFF */
+    .img__wrap {
+      position: relative;
+    }
+    .img__description_layer {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      visibility: hidden;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity .1s, visibility .1s;
+    }
+    .img__description {
+      transition: .1s;
+      transform: translateY(1em);
+    }
+    .img__wrap:hover .img__description_layer {
+      visibility: visible;
+      opacity: 1;
+    }
+    /* --------------------------------------------- */
+    img.playlistImages {
+      width: 24vw;
+    }
+    img.playlistImages-hp {
+      width: 18vw;
+    }
+    a,
+    ul,
+    p,
+    ol,
+    span {
+      font-size: 1.6vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    table {
+      font-size: 1.4vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    pre {
+      font-size: 1.2vw;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+    }
+    .notThatSmall {
+      font-size: 1.3vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    .smaller {
+      font-size: 1.2vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    a.dts, a.lts {
+      font-size: 1.8vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    figcaption, a.figcaption {
+      font-size: 1.3vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    sup {
+      font-size: 0.8vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    a.imageSource {
+      text-align: center;
+      font-size: 0.8vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    h1 {
+      font-size: 2.4vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    .title {
+      font-size: 3.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h2 {
+      font-size: 2vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h3 {
+      font-size: 1.8vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    .h3 {
+      font-size: 1.8vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h4 {
+      font-size: 1.6vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    .h4 {
+      font-size: 1.6vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    .dash {
+      font-size: 1.6vw;
+    }
+  }
+  /* screen width lower than 1000 px */
+  @media screen and (max-width: 1250px) and (min-width: 0px) {
+    /* article padding and object padding */
+    .articleBody, .paddedBody {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .fullBody {
+      padding-left: 0%;
+      padding-right: 0%;
+    }
+    .halfRightPadding {
+      padding-right: 10%;
+    }
+    .blogTitleRightPadding {
+      padding-right: 75%;
+    }
+    .homepagePlaylist {
+      width: 100%;
+    }
+    /* PADDING all around */
+    .paddingAllAround {
+      padding-left: 3%;
+      padding-right: 3%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+    }
+    .smallPaddingAllAround {
+      padding-left: 2%;
+      padding-right: 2%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+    /* article date */
+    span.articleTopInfo {
+      font-size: 1.6vw;
+    }
+    /* MULTI COLUMN LAYOUTS ---------------------- */
+    /* two-col layout */
+    div.column {
+      float: left;
+    }
+    div.leftcol {
+      width: 60%
+    }
+    div.rightcol {
+      width: 40%
+    }
+    div.triplecol {
+      width: 33%;
+    }
+    div.row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    /* two-col layout - HOME */
+    div.leftcol-home {
+      width: 100%;
+      margin-bottom: 2%;
+      float: none;
+    }
+    div.leftcol-home-np {
+      width: 100%;
+      float: none;
+    }
+    div.rightcol-home {
+      width: 100%;
+      float: none;
+    }
+    /* two-col layout - ABOUT */
+    div.leftcol-half-about {
+      width: 95%;
+      float: none;
+    }
+    div.rightcol-half-about {
+      width: 95%;
+      float: none;
+    }
+    /* --------------------------------------------- */
+    /* PLAYLIST HOVER STUFF */
+    .img__wrap {
+      position: relative;
+    }
+    .img__description_layer {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      visibility: hidden;
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity .1s, visibility .1s;
+    }
+    .img__description {
+      transition: .1s;
+      transform: translateY(1em);
+    }
+    .img__wrap:hover .img__description_layer {
+      visibility: visible;
+      opacity: 1;
+    }
+    /* --------------------------------------------- */
+    img.playlistImages {
+      width: 30vw;
+    }
+    img.playlistImages-hp {
+      width: 22vw;
+    }
+    a,
+    ul,
+    p,
+    ol,
+    span {
+      font-size: 3.2vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    table {
+      font-size: 2.9vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    pre {
+      font-size: 2.8vw;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+    }
+    .notThatSmall {
+      font-size: 3vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    .smaller {
+      font-size: 2.8vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    a.dts, a.lts {
+      font-size: 4vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    figcaption,  a.figcaption {
+      font-size: 2.8vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    sup {
+      font-size: 1.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    a.imageSource {
+      text-align: center;
+      font-size: 1.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    h1 {
+      font-size: 6vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    .title {
+      font-size: 7.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h2 {
+      font-size: 5vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h3 {
+      font-size: 4vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    .h3 {
+      font-size: 4vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h4 {
+      font-size: 3.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    .h4 {
+      font-size: 3.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    .dash {
+      font-size: 3.5vw;
+    }
+  }
+
+
+/* CV headings */
+.cvHeading1 {
+  display: inline;
+}
+.cvHeading2 {
+  font-style: italic;
+}
+.block {
+  display: block;
+}
+
+/* blog title */
+.blogTitle {
+  text-align: center;
+}
+#blogTitle {
+  display: inline;
+}
+
+/* cool links random link browser  */
+#randomLinkBrowserEmbed {
+  width: 100%;
+  height: 1000px;
+}
+
+/* li bullet icons for diff profiles/links */
+ul.noBullets {
+  list-style: none;
+}
+li.pjs:before {
+  margin-left: -20px; 
+  margin-right: 10px;
+  content: '📎';
+}
+li.pjs-gh:before {
+  margin-left: -20px; 
+  margin-right: 10px;
+  content: '🗂️';
+}
+li.pjs-desc:before {
+  margin-left: -20px; 
+  margin-right: 10px;
+  content: '📝';
+}
+li.ml:before {
+  margin-left: -20px; 
+  margin-right: 10px;
+}
+li.blog:before {
+  content: attr(data-before);
+}
+
+
+/* li bullet icons for cv section */
+li.tag:before {
+  content:'>';
+}
+.rightcol {
+  text-align: right;
+}
+.centered {
+  text-align: center;
+}
+.inline {
+  display: inline;
+}
+
+/*  table */
+table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 2px #676767;
+  word-break:break-all;
+}
+tbody tr {
+  border-bottom: 1px solid #676767;
+}
+thead tr {
+  background-color: #717171;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+td, th {
+  padding: 10px 11px;
+}
+tbody tr:last-of-type {
+  border-bottom: 3px solid #676767;
+}
+
+/* pre */
+code {
+  font-family: Courier, 'Courier New' !important;
+  background-color: inherit;
+  background: inherit;
+  color: inherit;
+}
+span.token, [class^="hljs"], .hljs {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  background-color: inherit !important;
+  background: inherit !important;
+  color: inherit;
+}
+
+/* input for notifs */
+input.emailField {
+  border: none;
+  display: inline;
+  width:100%;
+  font-size: inherit;
+}
+input.subscribeButton {
+  font-size: inherit;
+  border: none;
+  width:100%;
+  cursor: pointer;
+}
+

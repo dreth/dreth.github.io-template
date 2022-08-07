@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Your name | cool links">
+  <meta name="description" content="Links I find cool">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yoursite.com/cool_links">
+  <meta property="og:title" content="Your name | cool links">
+  <meta property="og:description" content="Links I find cool">
+  <meta property="og:image" content="/assets/icons/meta.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="/assets/icons/meta.png">
+  <meta property="twitter:url" content="https://yoursite.com/cool_links">
+  <meta property="twitter:title" content="Your name | cool links">
+  <meta property="twitter:description" content="Links I find cool">
+  <meta property="twitter:image" content="/assets/icons/meta.png">
+
+  <!-- stylesheet, script, icon and font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" type="text/css" href="/assets/css/styles-settings.css">
+  <link rel="shortcut icon" id="icon"/>
+  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="/assets/css/styles.css">
+
+  <!-- title -->
+  <script src="/assets/js/libs/jquery.js"></script>
+  <title id="linksTitleBar">cool links | Your name</title>
+</head>
+
+<body class="paddedBody">
+  <div class="row">
+    <div class="column leftcol">
+      <a class='title' href="/" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1 class="inline">Your name</h1></a>
+      <h3 id="linksTitle"></h3>
+      <h3 id="randomLinksTitle"></h3>
+      <a id="goToRandomLinkTitle" onclick="goToRandomLink()"></a>
+    </div>
+    <div class="column rightcol">
+      <!-- Theme switcher -->
+      <br><div id="themeSwitcher"></div>
+      <br><div id="randomLinkSwitcher"></div>
+    </div>
+  </div>
+  <div id="linksBlock" class="row divBorder smallPaddingAllAround">
+    <div class="column leftcol-half-about rightmargin-2">
+      <!-- WIKIPEDIA LINKS -->
+      <h3 class="inline">Wikipedia:</h3>
+      <div id="wikipediaLinkList"></div>
+    </div>
+    <div class="column rightcol-half-about leftmargin-2">
+      <!-- WIKTIONARY LINKS -->
+      <h3 class="inline">Wiktionary:</h3>
+      <div id="wiktionaryLinkList"></div>
+
+      <!-- OTHER LINKS -->
+      <h3 class="inline" id="otherSitesLabel"></h3>
+      <div id="otherSitesLinkList"></div>
+    </div>
+  </div>
+
+  <!-- random link browser -->
+  <div id="randomLinkBrowser">
+    <hr>
+    <embed id="randomLinkBrowserEmbed">
+  </div>
+
+  <script src="/assets/js/mainScript.js"></script>
+  <script src="/assets/js/coolLinksScript.js"></script>
+</body>
+
+</html>

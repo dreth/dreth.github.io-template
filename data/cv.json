@@ -1,0 +1,176 @@
+{
+    "headings": {
+        "aboutme":{
+            "en":"📃 about me",
+            "es":"📃 sobre mí"
+        },
+        "cvtitle":{
+            "en":"CV/Résumé",
+            "es":"CV"
+        }
+    },
+    "education": {
+        "heading":{
+            "en":"📚 Education",
+            "es":"📚 Educación"
+        },
+        "list":{
+            "en":[
+                {
+                    "title":"Degree",
+                    "institution":"🎓 Institution",
+                    "dates":"📅 Date 1 - Date 2",
+                    "location":"📍 City, Country"
+                }
+            ],
+            "es":[
+                {
+                    "title":"Título",
+                    "institution":"🎓 Instituto",
+                    "dates":"📅 Fecha 1 - Fecha 2",
+                    "location":"📍 Ciudad, País"
+                }
+            ]
+        }
+    },
+    "work": {
+        "heading":{
+            "en":"👨‍💻 Work experience",
+            "es":"👨‍💻 Experiencia laboral"
+        },
+        "list":{
+            "en":[
+                {
+                    "title":"Job title",
+                    "institution":"🏢 Company",
+                    "dates":"📅 Date 1 - Date 2",
+                    "location":"📍 City, Country",
+                    "schedule":"🕐 Full or part time"
+                }
+            ],
+            "es":[
+                {
+                    "title":"Data Scientist",
+                    "institution":"🏢 Populate",
+                    "dates":"📅 Septiembre 2021 - Febrero 2022",
+                    "location":"📍 Madrid, España (remoto)",
+                    "schedule":"🕐 Tiempo completo"
+                }
+            ]
+        },
+        "detail":{
+            "en":[
+                "- I did one thing<br>- But also another thing"
+            ],
+            "es":[
+                "- Hice una cosa<br>- Y luego otra cosa"
+            ]
+        }
+    },
+    "other": {
+        "languages": {
+            "heading": {
+                "en":"🗺️ Languages",
+                "es":"🗺️ Idiomas"
+            },
+            "level":{
+                "en": {
+                    "advanced":"Advanced/Native:",
+                    "intermediate":"Intermediate:",
+                    "basic":"Basic:"
+                },
+                "es":{
+                    "advanced":"Avanzado/Nativo:",
+                    "intermediate":"Intermedio:",
+                    "basic":"Básico:"
+                }
+            },
+            "list": {
+                "en":{
+                    "advanced":[
+                        "🇪🇸🇩🇴 Spanish",
+                        "🇺🇸🇬🇧 English"
+                    ],
+                    "intermediate":[
+                        "🇳🇱🇧🇪 Dutch"
+                    ],
+                    "basic":[
+                        "🇮🇹 Italian"
+                    ]
+                },
+                "es":{
+                    "advanced":[
+                        "🇪🇸🇩🇴 Español",
+                        "🇺🇸🇬🇧 Inglés"
+                    ],
+                    "intermediate":[
+                        "🇳🇱🇧🇪 Neerlandés"
+                    ],
+                    "basic":[
+                        "🇮🇹 Italiano"
+                    ]
+                }
+            }
+        },
+        "skills": {
+            "heading":{
+                "en":"🖥️ Skills",
+                "es":"🖥️ Habilidades"
+            },
+            "skills_categories": {
+                "languages":{
+                    "en":"Languages",
+                    "es":"Lenguajes"
+                },
+                "frameworks":{
+                    "en":"Frameworks",
+                    "es":"Frameworks"
+                },
+                "tools1":{
+                    "en":"Tools",
+                    "es":"Utilidades"
+                },
+                "tools2":{
+                    "en":"Tools",
+                    "es":"Utilidades"
+                },
+                "platforms":{
+                    "en":"Platforms",
+                    "es":"Plataformas"
+                },
+                "other1":{
+                    "en":"Other",
+                    "es":"Otros"
+                },
+                "other2":{
+                    "en":"Other",
+                    "es":"Otros"
+                }
+            },
+            "list":{
+                "en":{
+                    "noLevel":{
+                        "languages":"Programming languages",
+                        "frameworks":"Frameworks",
+                        "tools1":"Tools 1",
+                        "tools2":"Tools 2",
+                        "platforms":"Platforms",
+                        "other1":"Other 1",
+                        "other2":"Other 2"
+                    }
+                },
+                "es":{
+                    "noLevel":{
+                        "languages":"Lenguajes de programación",
+                        "frameworks":"Frameworks",
+                        "tools1":"Utilidades 1",
+                        "tools2":"Utilidades 2",
+                        "platforms":"Plataformas",
+                        "other1":"Otro 1",
+                        "other2":"Otro 2"
+                    }
+                }
+            }
+        }
+    }
+}

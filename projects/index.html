@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Your name | projects">
+  <meta name="description" content="My personal/academic projects.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yoursite.com/cool_links">
+  <meta property="og:title" content="Your name | projects">
+  <meta property="og:description" content="My personal/academic projects.">
+  <meta property="og:image" content="/assets/icons/meta.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="/assets/icons/meta.png">
+  <meta property="twitter:url" content="https://yoursite.com/cool_links">
+  <meta property="twitter:title" content="Your name | projects">
+  <meta property="twitter:description" content="My personal/academic projects.">
+  <meta property="twitter:image" content="/assets/icons/meta.png">
+
+  <!-- stylesheet, script, icon and font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" type="text/css" href="/assets/css/styles-settings.css">
+  <link rel="shortcut icon" id="icon"/>
+  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="/assets/css/styles.css">
+
+  <!-- title -->
+  <script src="/assets/js/libs/jquery.js"></script>
+  <title id="projectsTitleBar">projects | Your name</title>
+</head>
+
+<body class="paddedBody">
+  <div>
+    <div class="row">
+      <div class="column leftcol">
+        <a class='title' href="/" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1 class="inline">Your name</h1></a>
+        <h3 id="projectsTitle">⚗️ proyects</h3>
+      </div>
+      <div class="column rightcol">
+        <br>
+        <!-- Language switcher -->
+        <div class="inline">
+          <a onclick="updateLang('es')" onmouseenter="toggleLangText('es',1)" onmouseleave="toggleLangText('es',0)" class="l">🇪🇸🇩🇴</a>&nbsp;
+          <a onclick="updateLang('en')" onmouseenter="toggleLangText('en',1)" onmouseleave="toggleLangText('en',0)" class="l">🇬🇧🇺🇸</a>
+        </div>&emsp;&nbsp;
+        <!-- Theme switcher -->
+        <div id="themeSwitcher" class="inline"></div>
+      </div>
+    </div>
+    </div>
+    <div id="projectsList" class="divBorder smallPaddingAllAround"></div>
+
+  <script src="/assets/js/mainScript.js"></script>
+  <script src="/assets/js/projectsScript.js"></script>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+{
+    "content": {
+        "subtitle": {
+            "en":"subtitle",
+            "es":"subtítulo"
+        },
+        "welcome": {
+            "en":"welcome!",
+            "es":"bienvenido/a!"
+        },
+        "about": {
+            "en":"about me",
+            "es":"sobre mí"
+        },
+        "blog": {
+            "en":"blog",
+            "es":"blog"
+        },
+        "about_title": {
+            "en":"📃 about me",
+            "es":"📃 sobre mí"
+        },
+        "about_full": {
+            "en":"📃 view full CV",
+            "es":"📃 ver mi CV completo"
+        },
+        "blog_title": {
+            "en":"🗒️ blog",
+            "es":"🗒️ blog"
+        },
+        "articles_label": {
+            "en":"articles:",
+            "es":"artículos:"
+        },
+        "prev_article_text": {
+            "en":"⬅️ Previous article",
+            "es":"⬅️ Artículo anterior"
+        },
+        "next_article_text": {
+            "en":"➡️ Next article",
+            "es":"➡️ Próximo artículo"
+        },
+        "oldest_article_text": {
+            "en":"You're currently reading the oldest article",
+            "es":"Está leyendo el primer artículo del blog"
+        },
+        "latest_article_text": {
+            "en":"You're currently reading the latest article",
+            "es":"Está leyendo el artículo más reciente del blog"
+        },
+        "cool_links": {
+            "en":"cool links",
+            "es":"enlaces cool"
+        },
+        "cool_links_title": {
+            "en":"⛓️ cool links",
+            "es":"⛓️ enlaces cool"
+        },
+        "cool_links_full": {
+            "en":"⛓️ view all cool links",
+            "es":"⛓️ ver todos los links cool"
+        },
+        "random_cool_links": {
+            "en":"🔄 random cool links",
+            "es":"🔄 enlaces cool aleatorios"
+        },
+        "go_to_random_link": {
+            "en":"🔮 go to another random link",
+            "es":"🔮 ir a otro enlace aleatorio"
+        },
+        "projects_title": {
+            "en":"⚗️ projects",
+            "es":"⚗️ proyectos"
+        },
+        "projects": {
+            "en":"projects",
+            "es":"proyectos"
+        },
+        "projects_we": {
+            "en":"🧪 projects",
+            "es":"🧪 proyectos"
+        },
+        "playlists": {
+            "en":"playlists",
+            "es":"listas de reproducción"
+        },
+        "playlists_title": {
+            "en":"🎶 playlists",
+            "es":"🎶 listas de reproducción"
+        },
+        "playlists_full": {
+            "en":"🎶 view all playlists",
+            "es":"🎶 ver todas las listas"
+        },
+        "github": {
+            "en":"github",
+            "es":"github"
+        },
+        "linkedin": {
+            "en":"linkedin",
+            "es":"linkedin"
+        },
+        "e-mail": {
+            "en":"e-mail",
+            "es":"correo"
+        },
+        "github_we": {
+            "en":"📦 github",
+            "es":"📦 github"
+        },
+        "linkedin_we": {
+            "en":"👤 linkedin",
+            "es":"👤 linkedin"
+        },
+        "e-mail_we": {
+            "en":"✉️ e-mail",
+            "es":"✉️ correo"
+        },
+        "homepage_wikipedia": {
+            "en":"Some cool Wikipedia articles I read recently:",
+            "es":"Algunos articulos cool de Wikipedia que leí recientemente:"
+        },
+        "homepage_playlist": {
+            "en":"This one's chill:",
+            "es":"Esta está chill:"
+        },
+        "download_cv_link": {
+            "en":"💾 Download in PDF",
+            "es":"💾 Descargar en PDF"
+        },
+        "theme_lang": {
+            "en":
+                {
+                    "dark":"dark",
+                    "light":"light"
+                
+                },
+            "es":
+                {
+                    "dark":"oscuro",
+                    "light":"claro"
+                }
+        
+        },
+        "about_me_text": {
+            "en":"About me text on about me page",
+            "es":"Texto acerca de tí en la página de acerca de tí"
+        
+        },
+        "about_me_short": {
+            "en":"Short about me on homepage",
+            "es":"Acerca de tí corto para el homepage"
+        
+        },
+        "other_sites": {
+            "en":"Other sites:",
+            "es":"Otras páginas web:"
+        },
+        "language_names": {
+            "en":"english",
+            "es":"español"
+        },
+        "newsletter_notif": {
+            "en":"📧 Get notified when I post",
+            "es":"📧 Recibe notificaciones cuando publico"
+        },
+        "newsletter_title": {
+            "en":"📧 Newsletter",
+            "es":"📧 Notificaciones por correo"
+        },
+        "newsletter": {
+            "en":"Newsletter",
+            "es":"Notificaciones por correo"
+        },
+        "subscribe_button": {
+            "en":"Add me to the list",
+            "es":"Agrégame a la lista"
+        },
+        "newsletter_thank_you": {
+            "en":"Welcome to the mailing list (:<br><br>You'll now receive emails when I post something on my blog.",
+            "es":"Bienvenido a la lista de correos (:<br><br>Ahora recibirás correos cuando publique algo en mi blog."
+        },
+        "back_home": {
+            "en":"Go back to the homepage",
+            "es":"Volver a la página principal"
+        },
+        "unsub_embed": {
+            "en":"Unsubscribe",
+            "es":"Desuscribirse"
+        },
+        "newsletter_email_updated": {
+            "en":"Your email has been updated.",
+            "es":"Tu correo ha sido actualizado."
+        },
+        "newsletter_unsubscribed": {
+            "en":"You have been removed from the mailing list.",
+            "es":"Has sido eliminado de la lista de correos." }
+    },
+    "objectIds_Field":{
+        "0": {
+            "homepageSubtitle":"subtitle",
+            "welcomeSubtitle":"welcome",
+            "aboutHomepageLink":"about_title",
+            "blogHomepageLink":"blog",
+            "coolLinksHomepageLink":"cool_links_title",
+            "playlistsHomepageLink":"playlists_title",
+            "projectsHomepageLink":"projects_we",
+            "githubHomepageLink":"github_we",
+            "linkedinHomepageLink":"linkedin_we",
+            "emailHomepageLink":"e-mail_we",
+            "playlistsTitle":"playlists_title",
+            "blogTitle":"blog_title",
+            "articlesLabel":"articles_label",
+            "linksTitle":"cool_links_title",
+            "otherSitesLabel":"other_sites",
+            "projectsTitle":"projects_title",
+            "randomLinksTitle":"random_cool_links",
+            "goToRandomLinkTitle":"go_to_random_link",
+            "prevArticleText":"prev_article_text",
+            "nextArticleText":"next_article_text",
+            "oldestArticleText":"oldest_article_text",
+            "latestArticleText":"latest_article_text",
+            "downloadCVLink":"download_cv_link",
+            "signUpNewsletterTitle":"newsletter_notif",
+            "newsletterHeading":"newsletter_title",
+            "newsletterTitleBar":"newsletter",
+            "newsletterThankYou":"newsletter_thank_you",
+            "backHome":"back_home",
+            "unsubEmbed":"unsub_embed",
+            "newsletterEmailUpdated":"newsletter_email_updated",
+            "newsletterUnsubscribed":"newsletter_unsubscribed"
+        
+        },
+        "1": {
+            "playlistsHomepagePreview":"homepage_playlist",
+            "coolLinksHomepagePreview":"homepage_wikipedia",
+            "aboutHomepagePreview":"about_me_short",
+            "playlistsHomepagePreviewSW":"homepage_playlist",
+            "coolLinksHomepagePreviewSW":"homepage_wikipedia",
+            "aboutHomepagePreviewSW":"about_me_text",
+            "aboutMeDescription":"about_me_text",
+            "themeSwitcher":"theme_lang",
+            "subscribeButton":"subscribe_button"
+        
+        },
+        "2": {
+            "linksTitleBar":"cool_links",
+            "blogTitleBar":"blog",
+            "playlistsTitleBar":"playlists",
+            "aboutMeTitleBar":"about",
+            "projectsTitleBar":"projects"
+        }
+    }
+}
