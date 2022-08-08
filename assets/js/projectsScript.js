@@ -18,18 +18,29 @@ function updateProjectsList(l=language) {
             projectList += `${projectHeading}<ul class="noBullets">`;
             for (let i = 0; i < projectNames[sec].length; i++) {
                 // type of link to project
-                let projectTypeOfLink = projectLinks[sec][i].includes("github") ? "github" : "website";
+                let projectLinkIsObj = typeof(projectLinks[sec][i]) == "object";
+                let projectTypeOfLink = !projectLinkIsObj ? "github" : "website";
 
                 // project NAMES
                 projectList += `<li class="pjs">${projectNames[sec][i][l]}</li>`;
+
                 // project DESCRIPTIONS
                 projectList += `<br><ul class="noBullets"><li class="pjs-desc">${projectDescriptions[sec][i][l]}</li>`;
+
                 // project LINKS
-                if (projectLinks[sec][i] != "") {
-                    projectList += `<br><li class="pjs-gh"><a class="b" href="${projectLinks[sec][i]}">${projectLinkHeading[projectTypeOfLink][l]}</a></li></ul>`;
+                if ((!projectLinkIsObj && projectLinks[sec][i] != "") | (projectLinkIsObj && projectLinks[sec][i].length > 0)) {
+                    // if it's a live website, also show the repo link
+                    let projectLinkLiContent;
+                    if (projectTypeOfLink == "website" && projectLinkIsObj) {
+                        projectLinkLiContent = `<a class="b" href="${projectLinks[sec][i][0]}">${projectLinkHeading['website'][l]}</a>, <a class="b" href="${projectLinks[sec][i][1]}">${projectLinkHeading['github'][l]}</a></li>`
+                    } else {
+                        projectLinkLiContent = `<a class="b" href="${projectLinks[sec][i]}">${projectLinkHeading[projectTypeOfLink][l]}</a></li>`
+                    }
+
+                    // append link
+                    projectList += `<br><li class="pjs-gh">${projectLinkLiContent}</ul>`;
                     // add line breaks if the object isnt the last one of the last section
                     if (!lastSection) {
-                        console.log('test')
                         projectList += '<br><br>';
                     }
                 } 
@@ -51,7 +62,7 @@ allFiles.done(() => {
 
     // make all links' target _blank if the link does not have #
     $('a').click(function() {
-        if (this.href != 'https://yoursite.com/') {
+        if (this.href != 'https://dac.ac/') {
             this.target = '_blank'
         }
     })
