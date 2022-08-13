@@ -104,14 +104,6 @@
             "en":"e-mail",
             "es":"correo"
         },
-        "github_we": {
-            "en":"📦 github",
-            "es":"📦 github"
-        },
-        "linkedin_we": {
-            "en":"👤 linkedin",
-            "es":"👤 linkedin"
-        },
         "e-mail_we": {
             "en":"✉️ e-mail",
             "es":"✉️ correo"
@@ -205,8 +197,6 @@
             "coolLinksHomepageLink":"cool_links_title",
             "playlistsHomepageLink":"playlists_title",
             "projectsHomepageLink":"projects_we",
-            "githubHomepageLink":"github_we",
-            "linkedinHomepageLink":"linkedin_we",
             "emailHomepageLink":"e-mail_we",
             "playlistsTitle":"playlists_title",
             "blogTitle":"blog_title",

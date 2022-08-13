@@ -19,12 +19,10 @@ a.titleHomepage {
   margin-bottom: 2%;
 }
 .hp-main-grid-21 {
-  margin-right: 2%;
-  margin-top: 2%;
+  margin: 0 2% 0 0;
 }
 .hp-main-grid-22 {
-  margin-left: 2%;
-  margin-top: 2%;
+  margin: 0 0 0 2%;
 }
 /* two-col layout - PLAYLISTS */
 div.leftcol-half {
@@ -53,6 +51,10 @@ div.rightmargin-1 {
 div.leftcol-half-mb {
   width: 48%;
   float: none;
+}
+div.leftcol-half-mb-3 {
+  width: 30.6%;
+  display: flex;
 }
 div.rightcol-half-mb {
   width: 48%;
@@ -247,6 +249,11 @@ div.rightcol-half-articles {
       font-size: 1.2vw;
       font-family: Ubuntu, Sans-Serif;
       font-weight: normal;
+    }
+    img.homepageButtonSVG {
+      width: 2vw;
+      margin: 7% auto 7% auto;
+      display: block;
     }
     .h3 {
       font-size: 1.2vw;
@@ -458,6 +465,11 @@ div.rightcol-half-articles {
       font-family: Ubuntu, Sans-Serif;
       font-weight: normal;
     }
+    img.homepageButtonSVG {
+      width: 3.5vw;
+      margin: 7% auto 7% auto;
+      display: block;
+    }
     h4 {
       font-size: 1.6vw;
       font-family: Ubuntu, Sans-Serif;
@@ -658,6 +670,11 @@ div.rightcol-half-articles {
       font-size: 4vw;
       font-family: Ubuntu, Sans-Serif;
       font-weight: normal;
+    }
+    img.homepageButtonSVG {
+      width: 7vw;
+      margin: 7% auto 7% auto;
+      display: block;
     }
     h4 {
       font-size: 3.5vw;

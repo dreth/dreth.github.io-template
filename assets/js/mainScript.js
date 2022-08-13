@@ -1,6 +1,8 @@
 // GENERAL STUFF ------------ links to all the profiles + email
 const linkedin = 'https://www.linkedin.com/in/your_linkedin_user/';
 const github = 'https://github.com/your_github_user';
+const twitter = 'https://twitter.com/your_twitter_user';
+const email = 'mailto:contact@yoursite.com';
 const blog = '/blog/';
 const about = '/about/';
 const home = '/';
@@ -8,7 +10,6 @@ const status = '/status';
 const projects = '/projects';
 const cool_links = '/cool_links';
 const playlists = '/playlists';
-const email = 'mailto:contact@yoursite.com';
 var language;
 var darkThemeLabel;
 var lightThemeLabel;
@@ -276,6 +277,9 @@ function loadObjects(langsObj, l=language) {
 
     // loadArticles
     loadArticleList()
+
+    // load homepage buttons
+    loadProfileButtons()
 }
 
 // links for the article MD files and article URL
@@ -300,6 +304,46 @@ function loadArticleList() {
         // appending the list of articles
         $("#articleList").html(artList);
 }
+
+// load profile buttons
+function loadProfileButtons() {
+    // profile buttons
+    profileButtons = {
+        'github': github,
+        'linkedin': linkedin,
+        'twitter': twitter
+    }
+
+    // margins
+    buttonMargins = {
+        'github': "0 2% 0 0",
+        'linkedin': "0 2% 0 2%",
+        'twitter': "0 0 0 2%"
+    }
+
+    // generate profile buttons
+    profileButtonsContent = ''
+    for (const [name, link] of Object.entries(profileButtons)) {
+        // append to profile buttons html object
+        profileButtonsContent += `
+        <a href="${link}" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b ml-prof">
+            <div id="${name}HomepageButtonDiv" class="column leftcol-half-mb-3 centered divBorder ml">
+                <img src="/assets/icons/${name}.svg" class="homepageButtonSVG"/>
+            </div>
+        </a>
+        `
+    }
+
+    // add elements to section
+    $("#profileButtons").html(profileButtonsContent)
+
+    // loop over buttons
+    for (const name of Object.keys(profileButtons)) {
+        // set margins between buttons
+        $(`#${name}HomepageButtonDiv`).css('margin', buttonMargins[name]);
+    }
+}
+
 
 // detecting the language to abstract language-based links
 function updateLang(l) {
