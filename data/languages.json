@@ -148,6 +148,11 @@
             "en":"Other sites:",
             "es":"Otras páginas web:"
         },
+        "people_i_admire": {
+            "en":"People I admire:",
+            "es":"Personas que admiro:",
+            "nl":"Mensen die ik bewonder:"
+        },
         "language_names": {
             "en":"english",
             "es":"español"
@@ -203,6 +208,7 @@
             "articlesLabel":"articles_label",
             "linksTitle":"cool_links_title",
             "otherSitesLabel":"other_sites",
+            "peopleIAdmireLabel":"people_i_admire",
             "projectsTitle":"projects_title",
             "randomLinksTitle":"random_cool_links",
             "goToRandomLinkTitle":"go_to_random_link",

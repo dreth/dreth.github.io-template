@@ -7,5 +7,8 @@
     },
     "other_sites": {
         "Example dot com": "https://example.com"
+    },
+    "people_i_admire": {
+        "John Doe": "https://en.wikipedia.org/wiki/John_Doe"
     }
 }

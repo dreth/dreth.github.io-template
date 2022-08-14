@@ -59,13 +59,31 @@ coolLinksJSON.done(() => {
         document.getElementById("wiktionaryLinkList").innerHTML = artList;
     }
 
-    // ------------------------------------------ ANYTHING ELSE
-    // generate wiktionary link list
-    var wiktionaryArticles = coolLinksContent['other_sites'];
+    // ------------------------------------------ PEOPLE I ADMIRE
+    // generate links
+    var peopleIAdmire = coolLinksContent['people_i_admire'];
     var artList = '<ul>';
-    for (const name of Object.keys(wiktionaryArticles).reverse()) {
+    for (const name of Object.keys(peopleIAdmire).reverse()) {
         // create article URL
-        var articleURL = wiktionaryArticles[name] 
+        var articleURL = peopleIAdmire[name] 
+
+        // append to article list html object
+        artList += `<span>🔗</span> <a class="b" href="${articleURL}">${name}</a><br><br>`;
+    }
+    artList += '</ul>';
+
+    // appending the list of articles
+    if (document.getElementById("peopleIAdmireLinkList")) {
+        document.getElementById("peopleIAdmireLinkList").innerHTML = artList;
+    }
+
+    // ------------------------------------------ ANYTHING ELSE
+    // generate links
+    var otherSitesArticles = coolLinksContent['other_sites'];
+    var artList = '<ul>';
+    for (const name of Object.keys(otherSitesArticles).reverse()) {
+        // create article URL
+        var articleURL = otherSitesArticles[name] 
 
         // append to article list html object
         artList += `<span>🔗</span> <a class="b" href="${articleURL}">${name}</a><br><br>`;

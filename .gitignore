@@ -10,3 +10,4 @@ assets/py/word_lists/NL.txt
 *.synctex.gz
 *.xdv
 *.out
+.vscode/settings.json

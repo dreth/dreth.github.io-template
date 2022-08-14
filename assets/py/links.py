@@ -9,8 +9,10 @@ wikipediaBaseLink = 'wikipedia.org/wiki/'
 wiktionaryBaseLink = 'wiktionary.org/wiki/'
 
 # 1 = wikipedia
-# 2 = anything
+# 2 = people i admire
 # 3 = wiktionary
+# 4 = anything
+link_type_to_get = 1
 
 def get_links(type):
     input('did you check everything?')
@@ -55,12 +57,15 @@ def get_links(type):
 
             for i,line in enumerate(f.read().splitlines()):
 
-                # get site
-                soup = BeautifulSoup(requests.get(line).text, 'html.parser')
+                # print url
+                print()
+                print(line)
 
-                # get URL
-                for title in soup.find_all('title'):
-                    links['other_sites'][title.get_text()] = line 
+                # ask for name to input
+                name = input(f'name for {line}: ')
+
+                # save link
+                links['people_i_admire'][name] = line
 
     elif type == 3:
         with open('./assets/py/links_to_process.txt') as f:
@@ -88,6 +93,18 @@ def get_links(type):
                 # assemble and print elements
                 links['wiktionary'][page_name] = f"{lang}_{url_dir}"
     
+    elif type == 4:
+        with open('./assets/py/links_to_process.txt') as f:
+
+            for i,line in enumerate(f.read().splitlines()):
+
+                # get site
+                soup = BeautifulSoup(requests.get(line).text, 'html.parser')
+
+                # get URL
+                for title in soup.find_all('title'):
+                    links['other_sites'][title.get_text()] = line 
+
     else:
         exit()
 
@@ -124,5 +141,5 @@ def random_links():
 
 
 # run function
-get_links(1)
+get_links(link_type_to_get)
 random_links()
