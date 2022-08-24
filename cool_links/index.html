@@ -43,9 +43,16 @@
       <a id="goToRandomLinkTitle" onclick="goToRandomLink()"></a>
     </div>
     <div class="column rightcol">
+      <!-- Language switcher -->
+      <br>
+      <div class="inline">
+        <a onclick="updateLang('es')" onmouseenter="toggleLangText('es',1)" onmouseleave="toggleLangText('es',0)" class="l">🇪🇸🇩🇴</a>&nbsp;
+        <a onclick="updateLang('en')" onmouseenter="toggleLangText('en',1)" onmouseleave="toggleLangText('en',0)" class="l">🇬🇧🇺🇸</a>
+        <!-- <a onclick="updateLang('nl')" onmouseenter="toggleLangText('nl',1)" onmouseleave="toggleLangText('nl',0)" class="l">🇳🇱🇧🇪</a><br> -->
+      </div>&emsp;&nbsp;
       <!-- Theme switcher -->
-      <br><div id="themeSwitcher"></div>
-      <br><div id="randomLinkSwitcher"></div>
+      <div id="themeSwitcher" class="inline"></div>
+      <br><br><div id="randomLinkSwitcher"></div>
     </div>
   </div>
   <div id="linksBlock" class="row divBorder smallPaddingAllAround">
