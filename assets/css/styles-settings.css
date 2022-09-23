@@ -488,8 +488,8 @@ div.rightcol-half-articles {
   @media screen and (max-width: 1250px) and (min-width: 0px) {
     /* article padding and object padding */
     .articleBody, .paddedBody {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 2%;
+        padding-right: 2%;
     }
     .fullBody {
       padding-left: 0%;
