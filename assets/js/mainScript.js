@@ -164,21 +164,9 @@ function loadObjects(langsObj, l=language) {
                     case 'themeSwitcher':
                         // arrangement of theme link
                         if (getCookie('theme') == 0) {
-                            $("#themeSwitcher").html(`<a class='dt dts' onclick='changeTheme()'>🌒</a>`)
-                            $("#mainStylesheet").attr('href','/assets/css/styles-light.css')
-                    
-                            // for articles
-                            if (document.getElementById('articleStylesheet')) {
-                                $("#articleStylesheet").attr('href','/assets/css/articleStyles-light.css')
-                            }
+                            changeTheme(set=false);
                         } else {
-                            $("#themeSwitcher").html(`<a class='lt lts' onclick='changeTheme()'>☀️</a>`)
-                            $("#mainStylesheet").attr('href','/assets/css/styles.css')
-                    
-                            // for articles
-                            if (document.getElementById('articleStylesheet')) {
-                                $("#articleStylesheet").attr('href','/assets/css/articleStyles.css')
-                            }
+                            changeTheme(set=false);
                         }
 
                         break;
@@ -326,7 +314,7 @@ function loadProfileButtons() {
     for (const [name, link] of Object.entries(profileButtons)) {
         // append to profile buttons html object
         profileButtonsContent += `
-        <a href="${link}" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b ml-prof">
+        <a href="${link}" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b ml-prof" target="_blank">
             <div id="${name}HomepageButtonDiv" class="column leftcol-half-mb-3 centered divBorder ml">
                 <img src="/assets/icons/${name}.svg" class="homepageButtonSVG"/>
             </div>
@@ -371,25 +359,37 @@ function updateLang(l) {
 }
 
 // change theme
-function changeTheme() {
+function changeTheme(set=false) {
+    // change theme if set is true
+    if (set===true) {
+        setCookie('theme', getCookie('theme') == 1 ? 0 : 1)
+    }
     // translation lang for changing language
-    if (getCookie('theme') == 0) {
-        setCookie('theme',1)
-        $("#themeSwitcher").html(`<a class='lt lts' onclick='changeTheme()'>☀️</a>`)
+    if (getCookie('theme') == 1) {
+        $("#themeSwitcher").html(`<a class='lt lts' onclick='changeTheme(set=true)'>☀️</a>`)
         $("#mainStylesheet").attr('href','/assets/css/styles.css')
 
         // for articles
         if (document.getElementById('articleStylesheet')) {
             $("#articleStylesheet").attr('href','/assets/css/articleStyles.css')
         }
+
+        // for pages with code
+        if (document.getElementById('codeStylesheet')) {
+            $("#codeStylesheet").attr('href','/assets/css/libs/dracula.css')
+        }
     } else {
-        setCookie('theme',0)
-        $("#themeSwitcher").html(`<a class='dt dts' onclick='changeTheme()'>🌒</a>`)
+        $("#themeSwitcher").html(`<a class='dt dts' onclick='changeTheme(set=true)'>🌒</a>`)
         $("#mainStylesheet").attr('href','/assets/css/styles-light.css')
 
         // for articles
         if (document.getElementById('articleStylesheet')) {
             $("#articleStylesheet").attr('href','/assets/css/articleStyles-light.css')
+        }
+
+        // for pages with code
+        if (document.getElementById('codeStylesheet')) {
+            $("#codeStylesheet").attr('href','/assets/css/libs/highlight.css')
         }
     }
 }
