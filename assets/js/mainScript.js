@@ -546,10 +546,17 @@ function addTextChangeEvents() {
     }
 }
 
+
 // LOAD ALL OBJECTS -------------------------------------
 allFiles.done(() => {
-    // load stuff
-    loadObjects(langs)
+    // load default color (dark) depending on whether it's been visited before or not
+    if (~['0','1'].includes(getCookie('theme'))) {
+        setCookie('theme','1')
+        loadObjects(langs)
+    // otherwise just load stuff
+    } else {
+        loadObjects(langs)
+    }
     // add the events
     if (document.getElementById('homepageMainDiv')) {
         addTextChangeEvents()
