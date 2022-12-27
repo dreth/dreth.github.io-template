@@ -32,6 +32,9 @@ h1 {
         background-size: 100%;
         object-fit: cover;
     }
+    span,p,a {
+        line-height: 160%;
+    }
 }
 @media screen and (max-width: 2550px) and (min-width: 1350px) {
     img {
@@ -46,6 +49,9 @@ h1 {
         background-size: 100%;
         object-fit: cover;
     }
+    span,p,a {
+        line-height: 155%;
+    }
 }
 @media screen and (max-width: 1350px) and (min-width: 0px) {
     img {
@@ -59,6 +65,9 @@ h1 {
         height:100%;
         background-size: 100%;
         object-fit: cover;
+    }
+    span,p,a {
+        line-height: 150%;
     }
 }
 
