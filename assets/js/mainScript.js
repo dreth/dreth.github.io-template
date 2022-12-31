@@ -353,8 +353,6 @@ function updateLang(l) {
     // if on projects page
     if (document.getElementById("projectsTitleBar")) {
         updateProjectsList()
-    } else if (document.getElementById("aboutMeTitleBar")) {
-        loadCV(l)
     }
 }
 

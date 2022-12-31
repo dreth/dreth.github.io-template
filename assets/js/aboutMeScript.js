@@ -92,14 +92,14 @@ function loadCV(l=language) {
         let content = cvContent['other'][other_s[k]];
 
         // HEADING
-        otherContents += `<br><div><h3 class="cvHeading1">${content['heading'][language]}</h3></div><div class="halfRightPadding"><hr></div>`;
+        otherContents += `<br><div><h3 class="cvHeading1">${content['heading'][l]}</h3></div><div class="halfRightPadding"><hr></div>`;
 
         // LOOP OVER CONTENTS LIST
-        for (const [level, langContent] of Object.entries(content['list'][language])) {
+        for (const [level, langContent] of Object.entries(content['list'][l])) {
             // for stuff with levels of difficulty
             if (level != 'noLevel') {
                 // mark level
-                otherContents += `<ul><li><h4>${content['level'][language][level]}</h4></li><ul>`;
+                otherContents += `<ul><li><h4>${content['level'][l][level]}</h4></li><ul>`;
 
                 // add list elements
                 for (s = 0; s < langContent.length; s++) {
