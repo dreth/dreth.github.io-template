@@ -84,7 +84,7 @@ function loadCV(l=language) {
 
 // OTHER SECTION -----------------------------------------------------
     // list sections to loop over (these are identical)
-    let other_s = ['languages','skills'];
+    let other_s = ['skills','languages'];
     let otherContents = '';
     // loop over the sections
     for (k = 0; k < other_s.length; k++) {
@@ -110,7 +110,7 @@ function loadCV(l=language) {
             // if there's no level of difficulty
             else {
                 // mark level
-                otherContents += `<ul>`;
+                otherContents += `<u class="skills">`;
 
                 // take values from langcontent (skills)
                 let objLangContent = Object.values(langContent);

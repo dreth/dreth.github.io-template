@@ -717,6 +717,11 @@ div.rightcol-half-articles {
   height: 1000px;
 }
 
+/* line height for skills section in cv */
+ul.skills {
+  line-height: 155%;
+}
+
 /* li bullet icons for diff profiles/links */
 ul.noBullets {
   list-style: none;
