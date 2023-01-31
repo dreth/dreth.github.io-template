@@ -191,7 +191,16 @@
         },
         "newsletter_unsubscribed": {
             "en":"You have been removed from the mailing list.",
-            "es":"Has sido eliminado de la lista de correos." }
+            "es":"Has sido eliminado de la lista de correos." 
+        },
+        "cv_detail_toggle_1": {
+            "en":"(show detail ↕️)",
+            "es":"(mostrar detalle ⬆️)"
+        },
+        "cv_detail_toggle_0": {
+            "en":"(hide detail ↕️)",
+            "es":"(ocultar detalle ⬆️)"
+        }
     },
     "objectIds_Field":{
         "0": {

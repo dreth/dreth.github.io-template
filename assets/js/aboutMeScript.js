@@ -52,10 +52,11 @@ function loadCV(l=language) {
         
         // show detail if in the work experience section
         if (ed_work[k] === 'work') {
-            if (workDetails === 1) {
-                edWorkContents += `<a class="b" onclick="toggleWorkDetail()"><span class="smaller">(hide detail ⬆️)</span></a>`
+            edWorkContentsText = langs['content'][`cv_detail_toggle_${workDetails}`][l]
+            if (workDetails === 0) {
+                edWorkContents += `<a class="b" onclick="toggleWorkDetail()"><span class="smaller">${edWorkContentsText}</span></a>`
             } else {
-                edWorkContents += `<a class="b" onclick="toggleWorkDetail()"><span class="smaller">(show detail ↕️)</span></a>`
+                edWorkContents += `<a class="b" onclick="toggleWorkDetail()"><span class="smaller">${edWorkContentsText}</span></a>`
             }
         }
         edWorkContents += '</div><div class="halfRightPadding"><hr></div>'
@@ -73,7 +74,7 @@ function loadCV(l=language) {
             edWorkContents += `${title}${institution}${dates}${location}${schedule}`
 
             // add details if in work section
-            if (ed_work[k] === 'work' && workDetails == 1) {
+            if (ed_work[k] === 'work' && workDetails == 0) {
                 edWorkContents += `<ul class="smaller">${content["detail"][l][i]}</ul>`
             }
         }
