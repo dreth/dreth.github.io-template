@@ -61,6 +61,7 @@ function loadCV(l=language) {
         }
         edWorkContents += '</div><div class="halfRightPadding"><hr></div>'
 
+
         // LOOP OVER CONTENTS LIST
         for (i = 0; i < content["list"][l].length; i++) {
             // create content components
@@ -71,7 +72,7 @@ function loadCV(l=language) {
             let schedule = `${content["list"][l][i]["schedule"]}</span></ul>`
 
             // add contents to section
-            edWorkContents += `${title}${institution}${dates}${location}${schedule}`
+            edWorkContents += ed_work[k] === 'work' ? `${title}${institution}${dates}${location}${schedule}` : `${title}${institution}${dates}${location}</span></ul>`
 
             // add details if in work section
             if (ed_work[k] === 'work' && workDetails == 0) {
