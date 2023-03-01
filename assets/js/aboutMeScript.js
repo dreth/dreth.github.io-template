@@ -51,13 +51,11 @@ function loadCV(l=language) {
         edWorkContents = `<div><h3 class="cvHeading1">${content['heading'][l]}</h3> &nbsp;`
         
         // show detail if in the work experience section
-        if (ed_work[k] === 'work') {
-            edWorkContentsText = langs['content'][`cv_detail_toggle_${workDetails}`][l]
-            if (workDetails === 0) {
-                edWorkContents += `<a class="b" onclick="toggleWorkDetail()"><span class="smaller">${edWorkContentsText}</span></a>`
-            } else {
-                edWorkContents += `<a class="b" onclick="toggleWorkDetail()"><span class="smaller">${edWorkContentsText}</span></a>`
-            }
+        workDetailsToggleText = [langs['content'][`cv_detail_toggle_0`][l], langs['content'][`cv_detail_toggle_1`][l]]
+        if (details === 1) {
+            edWorkContents += `<a class="b" onclick="toggleDetails()"><span class="smaller">${workDetailsToggleText[0]}</span></a>`
+        } else {
+            edWorkContents += `<a class="b" onclick="toggleDetails()"><span class="smaller">${workDetailsToggleText[1]}</span></a>`
         }
         edWorkContents += '</div><div class="halfRightPadding"><hr></div>'
 
@@ -138,4 +136,3 @@ aboutFiles.done(() => {
         $("#downloadCVLink").attr('href',`/assets/py/Your_name_CV_${language}.pdf`)
     }
 })
-
